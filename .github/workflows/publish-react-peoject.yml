@@ -12,10 +12,6 @@
      runs-on: ubuntu-latest
      steps:
        # setup-node 可以提供node环境，指定node版本以及 npm /yarn缓存
-     - name: actions/setup-node@v2
-       uses: actions/setup-node@v2   
-       with:
-         node: 16.14
      # 初始用的npm 打包时间太长了，就想着用yarn 结果没仔细看文档，yarn 不用安装 ubuntu 上面有的 
      # 简写为
      - run: npm install && npm build
