@@ -130,7 +130,9 @@ export default class ChessPvc extends Component {
    */
   clearCanvas = () => {
     let cxt = this.chessElement.current;
-    cxt.height = cxt.height;
+    let tmp = cxt.height;
+    cxt.height = 0;
+    cxt.height = tmp;
   }
 
   /**

@@ -14,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route exact={true} path='/' component={Top} />
+          <Route exact={true} path='/react-gobang' component={Top} />
           <Route path='/top' component={Top} />
           <Route path='/login' component={SignIn} />
           <Route path='/register' component={SignUp} />
